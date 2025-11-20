@@ -1,0 +1,30 @@
+body{
+    background-color: antiquewhite;
+}
+
+h1{
+    color: #ff00ff;
+    text-align: center;
+}
+
+.naslov{
+    font-family: sans-serif;
+}
+
+#sadrzaj p{
+    line-height: 2rem;
+    color: blue;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li::before{
+    content: '😀';
+}
+
+ol{
+    list-style-type: upper-roman;
+}
+
