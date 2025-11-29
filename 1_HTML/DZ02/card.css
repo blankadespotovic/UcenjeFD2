@@ -1,0 +1,67 @@
+:root {
+    --bijela: #fff
+}
+
+body {
+    background-color: #dfe6e9;
+    display: flex;
+    justify-content: center;
+font-family: "Inter", sans-serif;
+
+}
+
+.card {
+    background-color: var(--bijela);
+    border-radius: 0.7rem;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+    min-width: 350px;
+    max-width: 350px;
+}
+
+.picture {
+    background-image: url(img/slika.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 250px;
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+    display: flex;
+}
+
+.picture span {
+    background-color: rgb(8, 133, 230);
+    font-size: 0.8rem;
+    color: var(--bijela);
+    font-weight: 600;
+    border-radius: 0.2rem;
+    max-height: max-content;
+    margin: 0.6rem;
+    padding: 4px 8px;
+}
+
+.card section {
+    padding: 0.1rem 1rem;
+}
+
+p {
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+hr {
+    border: 1px solid rgb(246, 246, 246);
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li::before {
+    content: "✔️";
+    margin-right: .5rem;
+}
