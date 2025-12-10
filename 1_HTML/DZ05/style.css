@@ -1,0 +1,185 @@
+body{
+    background-color: rgb(245, 228, 212);
+    max-width: 50vw;
+    margin: 0 auto;
+}
+
+h1, h3{
+    text-align: center;
+}
+
+h1{
+    color: rgb(136, 0, 0);
+}
+
+h3{
+    color: rgb(96, 96, 97);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.double-line{
+    height: 2px;
+    margin: 0 auto;
+    border-top: 2px solid rgb(154, 33, 31);
+    border-bottom: 1px solid rgb(154, 33, 31);
+    max-width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+#info{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
+    background-color: rgb(139, 0, 0);
+    text-align: center;
+    margin: 0 auto 20px;
+    padding: .8rem 2rem;
+}
+
+.info-text a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+#second{
+    border-left: 4px solid rgb(139, 0, 0);
+    padding-left: 10px;
+}
+
+#plot{
+    background: white;
+    border-radius: 10px; 
+    margin: 0 auto 20px;       
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.plot{
+    padding: 0 0 2rem 1rem;
+}
+
+blockquote{
+    background: rgb(249, 249, 249);
+    border-left: 4px solid rgb(204, 204, 204);
+    font-style: italic;
+    max-width: 100%;
+    padding: .5rem;
+    margin: 0;
+}
+
+.text-position{
+    display: flex;
+    width: 100%;
+}
+
+.left{
+    flex-basis: 20%;
+    line-height: 1.5;
+    font-size: 1.02rem;
+}
+
+.right{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right iframe{
+    max-width: 95%;
+    width: 100%;
+    max-height: 315px;
+    height: 100%;
+    aspect-ratio: 16/9;
+}
+
+#characters{
+    background-color: white;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.characters{
+    padding: 0 0 2rem 1rem;
+}
+
+table{
+    background-color: white;
+    border-collapse: collapse;
+    text-align: left;
+    width: 97%;
+    height: 60%;
+}
+
+th{
+    background-color: rgb(139, 0, 0);
+    color: white;
+}
+th, td{
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 20px;
+    border: 1px solid rgb(217, 217, 217);
+}
+
+tbody tr:nth-child(2){
+    background-color: rgb(242, 242, 242);
+}
+
+#send{
+    background-color: white;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.send{
+    padding: 0 0 2rem 1rem;
+}
+
+form{
+max-width: 80%;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+input, textarea{
+    width: 118%;
+    line-height: 2;
+    border-radius: 5px;
+    border: 1px solid rgb(118, 118, 118);
+}
+
+input[type="text"], textarea{
+    padding: 0 12px;
+}
+
+button{
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(136, 0, 0);
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+footer{
+    color: rgb(99, 100, 100);
+    margin: 0 auto 20px;
+    text-align: center;
+    margin-top: 20px;
+}
