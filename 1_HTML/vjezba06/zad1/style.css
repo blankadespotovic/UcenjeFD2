@@ -1,0 +1,67 @@
+:root{
+    --pozadina-boja: #eee;
+    --panel-boja: white;
+}
+
+body{
+    background-color: var(--pozadina-boja);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#center{
+    color: white;
+    z-index: 1;
+}
+
+.card{
+    font-family: sans-serif;
+    background-color: var(--panel-boja);
+    max-width: 300px;
+    margin: 100px auto;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;   
+ 
+}
+
+h2{
+    color: #a09595;
+    font: 1.1rem;
+}
+
+.card::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 130%;
+    background-image: linear-gradient(180deg, #ff00c8, cyan);
+    animation: animate 3s linear infinite;
+    transition: all .3s linear;
+}
+
+.card::after{
+    content: '';
+    position: absolute;
+    inset: 5px;
+}
+
+@keyframes animate{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
