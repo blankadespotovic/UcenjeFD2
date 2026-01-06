@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domaći kutak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="site-title"><span class="emoji">🍽</span> <strong>DOMAĆI KUTAK</strong></div>
+        <nav>
+            <ul>
+                <li>Meni</li>
+                <li>Info</li>
+                <li>Rezervacija</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="all">
+        <div id="main-title">
+            <h1>Okusi tradicije na tanjuru</h1>
+            <p>Svježe namirnice, bakini recepti i ugodna atmosfera.</p>
+        </div>
+
+        <section id="specialties">
+            <h2>Današnji Specijaliteti</h2>
+            <div class="grey-box-container">
+                <div class="grey-box">
+                    <div class="image-placeholder">300 x 200</div>
+                    <div class="content">
+                        <span class="price">12.00 €</span>
+                        <h3>Lovački Gulaš</h3>
+                        <p>S domaćim njokima i čašom crnog vina.</p>
+                    </div>
+                </div>
+
+                <div class="grey-box">
+                    <div class="image-placeholder">300 x 200</div>
+                    <div class="content">
+                        <span class="price">10.50 €</span>
+                        <h3>Piletina u umaku</h3>
+                        <p>Grill pileća prsa s umakom od gljiva i rižom.</p>
+                    </div>
+                </div>
+
+                <div class="grey-box">
+                    <div class="image-placeholder">300 x 200</div>
+                    <div class="content">
+                        <span class="price">8.00 €</span>
+                        <h3>Vege Tanjur</h3>
+                        <p>Sezonsko povrće sa žara, humus i tostirani kruh.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="meal-info">
+            <div class="table-header-text">
+                <h2>Nutritivne Vrijednosti</h2>
+                <p>Brinemo o vašem zdravlju. Pogledajte detalje za današnja jela.</p>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jelo</th>
+                        <th>Kalorije (kcal)</th>
+                        <th>Proteini (g)</th>
+                        <th>Alergeni</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lovački Gulaš</td>
+                        <td>650</td>
+                        <td>35</td>
+                        <td>Gluten, Jaja</td>
+                    </tr>
+                    <tr>
+                        <td>Piletina u umaku</td>
+                        <td>520</td>
+                        <td>40</td>
+                        <td>Laktoza</td>
+                    </tr>
+                    <tr>
+                        <td>Vege Tanjur</td>
+                        <td>380</td>
+                        <td>15</td>
+                        <td>Sezam</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="reservation">
+            <h2>Rezervirajte Stol</h2>
+            <form class="reservation-form">
+                <label>Vaše Ime:
+                    <input type="text" placeholder="Ivan Horvat">
+                </label>
+                <label>Broj osoba:
+                    <select>
+                        <option>1 Osoba</option>
+                        <option>2 Osobe</option>
+                        <option>3 Osobe</option>
+                        <option>4 Osobe</option>
+                        <option>5 Osoba</option>
+                    </select>
+                </label>
+                <label>Napomena:
+                    <textarea placeholder="Npr. rođendanska proslava..."></textarea>
+                </label>
+                <button type="submit">Potvrdi Rezervaciju</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
