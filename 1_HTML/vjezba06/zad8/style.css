@@ -1,0 +1,153 @@
+:root {
+    --bg-light: #f4f7f9;
+    --text-main: #1a1a1a;
+    --text-muted: #64748b;
+    --accent-blue: #3b82f6;
+    --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    --gap-value: 1rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    line-height: 1.6;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 45vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-value);
+}
+
+.card {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+}
+
+.main-header .category {
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: var(--accent-blue);
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.main-header h1 {
+    font-size: 4rem;
+    margin: 0 0 20px 0;
+    line-height: 1.1;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+}
+
+.year-accent {
+    color: var(--accent-blue);
+    font-family: "Playfair Display", serif;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+
+.lead {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.content {
+    display: flex;
+    gap: var(--gap-value);
+}
+
+.article-text {
+    flex: 0 0 65%;
+    font-family: sans-serif;
+}
+
+.article-text > p:first-child {
+    font-size: .97rem;
+}
+
+.article-text p{
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.article-text .no-justify{
+    text-align: start;
+}
+
+.pull-quote {
+    border-left: 4px solid var(--accent-blue);
+    padding-left: 25px;
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 900;
+    margin: 40px 0;
+    color: var(--text-main);
+    font-family: "Playfair Display", serif;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(249, 250, 252);
+    border-radius: 12px;
+    padding: 30px 40px;
+    box-shadow: var(--card-shadow);
+    
+}
+
+.sidebar-header {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 950;
+    font-size: var(--gap-value);
+}
+
+.fact-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+}
+
+.fact-number,
+.fact-title {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--accent-blue);
+    margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+}
+
+.fact-card p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
