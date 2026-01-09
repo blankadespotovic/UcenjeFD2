@@ -116,18 +116,34 @@ ol li {
     margin-bottom: 10px;
 }
 
-.stars {
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: center;
+    gap: 5px;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
     font-size: 40px;
-    color: #ffb703;
+    color: gainsboro;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out, transform 0.1s;
 }
 
-.stars .gray {
-    color: rgb(204, 204, 204);
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: rgb(255, 183, 3);
+    opacity: 0.8;
 }
 
-@media (max-width: 768px) {
-    .info-row {
-        flex-direction: column;
-    }
-    
+.star-rating input:checked ~ label {
+    color: rgb(255, 183, 3);
+}
+
+.star-rating label:active {
+    transform: scale(0.9);
 }
