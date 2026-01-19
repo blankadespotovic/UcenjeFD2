@@ -1,0 +1,85 @@
+main {
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+main h1 {
+    color: #FFF;
+    margin-top: 4rem;
+}
+
+#service-container {
+    background:
+            linear-gradient(
+                    to right,
+                    #1c2229 0%,
+                    transparent 25%,
+                    transparent 75%,
+                    #1c2229 100%
+            ),
+
+                
+            radial-gradient(
+                    ellipse 120% 90% at 50% 75%,
+                    #25313c 0%,
+                    rgba(37, 49, 60, 0.6) 35%,
+                    rgba(37, 49, 60, 0.2) 55%,
+                    transparent 75%
+            ),
+
+                
+            #1d242c;
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+table {
+    border-collapse: collapse;
+    min-width: 100%;
+    text-align: start;
+}
+
+#table-action {
+    text-align: center;
+}
+
+table tr th {
+    background: #00bf9f;
+    color: #192e38;
+    text-transform: uppercase;
+    text-align: start;
+}
+
+.custom-padding {
+    padding: 1rem;
+}
+
+table td,
+table tr th {
+    min-width: max-content;
+    padding: 1rem .5rem;
+}
+
+table tr {
+    border-bottom: 1px solid #353c44;
+}
+
+table td {
+    color: #fff;
+}
+
+td button {
+    background: #00bf9f;
+    border-radius: .25rem;
+    padding: .25rem 1rem;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+}
+
+table td:nth-child(4){
+    color: #00bf9f;
+    font-weight: bold;
+}

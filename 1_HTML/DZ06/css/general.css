@@ -1,0 +1,50 @@
+@font-face{
+    font-family: 'Surfer';
+    src: url('../fonts/OriginalSurfer-Regular.ttf') format('truetype');
+}
+
+* {
+    font-family: "Surfer", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+.header-container {
+    background: #2c3f51;
+    color: #FFF;
+    text-align: center;
+    margin: 0 1rem 1rem;
+    padding: 1rem;
+}
+
+.header-container p.index-description {
+    text-align: justify;
+}
+
+.header-container p {
+    max-width: 50vw;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+body {
+    background: #0f141c;
+    max-width: 70vw;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+footer {
+    bottom: 0;
+    left: 50%;
+    max-width: 70vw;
+    width: 100%;
+    background: #2c3e50;
+    text-align: center;
+    color: #FFF;
+    padding: 1.5rem 0;
+}

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <h1>Kontaktirajte Nas</h1>
+        <p>Pošaljite nam detaljan upit i javit ćemo vam se u roku od 24 sata.</p>
+    </div>
+
+  <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="../index.html">Početna</a></li>
+            <li><a href="../about-us/about-us.html">O nama</a></li>
+            <li><a href="../services/services.html">Usluge</a></li>
+            <li><a href="../projects/projects.html">Projekti</a></li>
+            <li><a href="../blog/blog.html">Blog</a></li>
+            <li><a href="../gallery/gallery.html">Galerija</a></li>
+            <li class="active"><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <form>
+        <div class="row">
+            <div class="label-input">
+                <label for="imeiprezime">Ime i prezime</label>
+                <input type="text" id="imeiprezime" name="imeiprezime" placeholder="Ime i prezime">
+            </div>
+            <div class="label-input">
+                <label for="email">E-mail adresa</label>
+                <input type="email" id="email" name="email" placeholder="email@primjer.com">
+            </div>
+        </div>
+        <div class="row">
+            <div class="label-input">
+                <label for="services">Zanima me usluga:</label>
+
+              <select name="services">
+                        <option selected value="1">Frontend Razvoj</option>
+                        <option value="2"> Web Dizajn</option>
+                        <option value="3">Backend Sustavi</option>
+                        <option value="4">SEO Optimizacija</option>
+                        <option value="5">Održavanje</option>
+                        <option value="6">Logo Dizajn</option>
+                        <option value="7">Digital Marketing</option>
+                        <option value="8">Copywriting</option>
+                        <option value="9">Web Shop (eCommerce)</option>
+                        <option value="10">Sigurnosna Provjera</option>
+                        <option value="11">Hosting i Domene</option>
+                        <option value="12">E-mail Marketing</option>
+                    </select>
+            </div>
+            <div class="label-input">
+                <label for="due">Željeni rok završetka:</label>
+                <input type="datetime-local" placeholder="dd.mm.gggg">
+
+                    
+            </div>
+        </div>
+        <div class="row">
+            <div class="label-input-full">
+                <label for="budget">Planirani budžet: 1500€</label>
+                <input type="range" name="" id="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="label-input-full">
+                <label for="desc">Opis projekta</label>
+                <textarea name="opis" rows="6" placeholder="Recite nam nešto više o vašim idejama..."></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <button>POŠALJI UPIT</button>
+        </div>
+    </form>
+</main>
+<footer> &copy; 2026 Edunova, sva prava pridržana</footer>
+</body>
+</html>

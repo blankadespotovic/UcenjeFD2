@@ -1,0 +1,73 @@
+main {
+    max-width: 55%;
+    height: 65vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.about-us-container {
+    margin: 1rem auto;
+    border-radius: 1rem;
+    padding: 2rem;
+    background: radial-gradient(
+            ellipse 120% 140% at 50% 120%,
+            #2b333a 0%,
+            #2b333a 30%,
+            #272a31 75%,
+            #272a31 100%
+    );
+    text-align: center;
+}
+
+.about-us-container h2 {
+    color: #2abc9c;
+    margin: 0 2rem 2rem;
+}
+
+.about-us-container p {
+    color: #FFF;
+    line-height: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.about-us-cards {
+    justify-self: end;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.about-me {
+    flex: 0 0 calc(33% - 3rem);
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: .75rem;
+}
+
+.about-me p {
+    margin: 0;
+    line-height: 1.5rem;
+}
+
+.about-me img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #34c1a4;
+    margin-bottom: 1.5rem;
+}
+footer {
+    position: fixed;
+    transform: translateX(-50%);
+}
