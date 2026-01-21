@@ -1,0 +1,103 @@
+body{
+    background-color: antiquewhite;
+    font-family: sans-serif;
+}
+
+.panel{
+    border: 1px solid black;
+    min-height: 200px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+
+
+ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+
+li{
+    text-align: center;
+}
+
+.a{grid-area: a;}
+.b{grid-area: b;}
+.c{grid-area: c;}
+.d{grid-area: d;}
+
+/* Tablet */
+@media (min-width: 425px) and (max-width: 600px){
+    body{
+        background-color: aliceblue;
+    }
+    ul{
+        flex-direction: row;
+    }
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "a b"
+        "c d";
+    }
+}
+/* Veći tablet */
+@media (min-width: 601px){
+    body{
+        background-color: beige;
+    }
+    ul{
+        flex-direction: row;
+    }
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "a b"
+        "c c"
+        "d d";
+    }
+}
+
+/* desktop */
+@media (min-width: 850px){
+    body{
+        background-color: chocolate;
+    }
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "a b c d";
+    }
+}
+
+@media print{
+    header, div.container{
+        display: none;
+    }
+    h1{
+        font-family: serif;
+    }
+    p{
+        text-align: justify;
+        font-size: 1.5rem;
+        text-indent: 30px;
+    }
+
+}
+
+@media (prefers-color-scheme: dark){
+    li a{
+        color: white;
+        background-color: black;
+    }
+}

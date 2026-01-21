@@ -1,0 +1,95 @@
+.box {
+    border: 1px solid black;
+    min-height: 100px;
+    font-size: 2rem;
+    text-align: center;
+    border: 2px solid violet;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+.d {
+    grid-area: d;
+}
+
+.e {
+    grid-area: e;
+}
+
+.f {
+    grid-area: f;
+}
+
+
+
+
+/* Tablet */
+@media (min-width: 425px) and (max-width: 600px) {
+
+    .container {
+        display: grid;
+        grid-template-areas:
+            "c"
+            "d"
+            "e";
+        gap: .5rem;
+    }
+
+    .a,
+    .b,
+    .f {
+        display: none;
+    }
+
+}
+
+/* Veći tablet */
+@media (min-width: 601px) {
+    .container {
+        display: grid;
+        grid-template-areas:
+            "b b"
+            "c f";
+        gap: .5rem;
+    }
+
+    .a,
+    .d,
+    .e {
+        display: none;
+    }
+
+}
+
+/* Desktop */
+@media (min-width: 750px) {
+
+    .container {
+        display: grid;
+        grid-template-areas:
+            "a a b b b b"
+            "c c d d e e"
+            "f f f f f f";
+        gap: .5rem;
+    }
+
+    .a,
+    .b,
+    .c,
+    .d,
+    .e,
+    .f {
+        display: block;
+    }
