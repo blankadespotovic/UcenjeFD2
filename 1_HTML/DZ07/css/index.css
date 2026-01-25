@@ -1,0 +1,138 @@
+* {
+    --drone-image-width: 500px;
+    --drone-image-aspect-ratio: 3 / 2;
+}
+
+.orbit-previous, .orbit-next{
+    min-width: min-content;
+    min-height: min-content;
+    font-size: 3rem;
+}
+
+.hero,
+.orbit-slide > div {
+    display: flex;
+    justify-content: center;
+}
+
+.hero {
+    min-height: 50vh;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(11, 11, 15, 0.88), rgba(11, 11, 15, 0.88)), url("https://media.craiyon.com/2025-07-08/ujH_gZnPTlewA4q6uIflDQ.webp") center center / cover no-repeat;
+}
+
+.hero h2 {
+    color: #ffffff;
+}
+
+.hero p {
+    color: #b8b1d6;
+    margin-bottom: 1.5rem;
+}
+
+.main-container,
+.main-container > .about-us > .cell {
+    color: #e3e0f2;
+}
+
+.main-container {
+    background: #0b0b0f;
+}
+
+.main-container > .about-us {
+    padding: 4rem 2rem 2rem;
+}
+
+.main-container > .about-us > .cell {
+    background: linear-gradient(rgba(36, 34, 51, 0.75), rgba(36, 34, 51, 0.75)),
+    url('https://siteland.hu/wp-content/uploads/2025/10/imadok-emberekkel-dolgozni-02.webp') center/cover no-repeat;
+    text-align: justify;
+}
+
+.main-container > .about-us > .cell,
+.card-container .cell {
+    padding: 2.5rem;
+    border-radius: .5rem;
+}
+
+.card-container,
+.custom-orbit-container {
+    padding-bottom: 4rem;
+}
+
+.card-container .cell {
+    flex: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cell .technical {
+    background-image: linear-gradient(rgba(59, 47, 95, 0.75), rgba(59, 47, 95, 0.75)), url('https://png.pngtree.com/background/20250106/original/pngtree-metal-cogs-and-gears-an-industrial-themed-banner-background-picture-image_15838987.jpg');
+}
+
+.cell .cognitive {
+    background-image: linear-gradient(rgba(59, 47, 95, 0.75), rgba(59, 47, 95, 0.75)), url('https://img.freepik.com/premium-vector/brain-artificial-intelligence-learning-line-circuit-technology-brainstorm-science-digital-chip_252172-1450.jpg');
+}
+
+.cell .stem {
+    background-image: linear-gradient(rgba(59, 47, 95, 0.75), rgba(59, 47, 95, 0.75)), url('https://www.mouser.com/blog/Portals/11/Julie%20Wright/Blog%20Article%20Image%20AdobeStock-Adobe%20Stock%20152392092.jpg?ver=RFVl_LOxlCpu97a6eVBSWA==');
+}
+
+.orbit-slide img {
+    width: var(--drone-image-width);
+    aspect-ratio: var(--drone-image-aspect-ratio);
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.orbit-previous,
+.orbit-next,
+.orbit-bullets button {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1023px) {
+    .main-container > .about-us > .cell {
+        text-align: start;
+    }
+
+    .main-container > .about-us {
+        padding: 4rem 1.5rem 2rem;
+    }
+
+    .custom-orbit-container,
+    .card-container {
+        padding-bottom: 2rem;
+    }
+
+    .hero {
+        min-height: 40vh;
+    }
+
+    .hero > div {
+        min-width: 100%;
+    }
+
+    .hero p {
+        color: #b8b1d6;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about-us,
+    .technical,
+    .cognitive,
+    .stem {
+        transition: all .5s ease;
+    }
+
+    .about-us:hover,
+    .technical:hover,
+    .cognitive:hover,
+    .stem:hover {
+        transform: scale(1.05);
+    }
+}

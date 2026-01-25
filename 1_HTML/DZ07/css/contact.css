@@ -1,0 +1,99 @@
+body {
+    background-color: #0b0b0f !important;
+}
+
+.main-content {
+    height: 80vh;
+    align-items: center;
+    width: 50vw;
+    margin: 0 auto;
+}
+
+.contact-card,
+fieldset,
+select,
+input,
+textarea {
+    border-radius: .5rem !important;
+}
+
+.contact-card {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0.5rem 1.5rem 1.5rem;
+    background-image: linear-gradient(rgba(59, 47, 95, 0.85), rgba(59, 47, 95, 0.85)), url('https://images.stockcake.com/public/d/4/1/d4155875-3be7-452e-95d0-8434f367eb1b_large/neon-email-icon-stockcake.jpg');
+}
+
+fieldset {
+    border: 1px solid #e3e0f2 !important;
+    padding: 1rem !important;
+}
+
+h1,
+h2,
+p,
+label,
+legend,
+select,
+input,
+textarea {
+    color: #e3e0f2 !important;
+}
+
+legend > h4 {
+    margin: 0 .5rem;
+}
+
+.contact-us {
+    text-align: center;
+    margin: 1rem 0 3rem;
+}
+
+select,
+input,
+textarea {
+    border: none !important;
+    border-bottom: 1px solid #e3e0f2 !important;
+    background-color: rgba(24, 19, 38, .35) !important;
+    box-shadow: none !important;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+    box-shadow: none !important;
+}
+
+option {
+    color: rgb(59, 47, 95);
+}
+
+.program-upis {
+    display: flex;
+    align-items: center;
+}
+
+.program-upis > .cell {
+    margin: .5rem auto 1rem;
+}
+
+input[type="checkbox"] {
+    accent-color: rgb(105, 84, 169);
+}
+
+::placeholder {
+    color: rgba(227, 224, 242, 0.3) !important;
+}
+
+@media screen and (max-width: 639px) {
+    .main-content {
+        margin: 1rem 0 3rem;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+    .main-content {
+        height: 84.5vh;
+    }
+}

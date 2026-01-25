@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FVP akademija</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/foundation.css">
+</head>
+<body>
+<header>
+    <div data-sticky-container class="top-banner-container">
+        <div class="top-banner sticky" data-sticky data-margin-top="0">
+            <div class="grid-x align-center">
+                <div class="cell shrink">
+                    <span>🚀 Upisi u tijeku! Prijave traju do 15. listopada. <a href="kontakt.html">Prijavi se</a> odmah.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="large">
+        <button class="menu-icon" type="button" data-toggle></button>
+    </div>
+    <div class="nav-container">
+        <div class="grid-x align-middle padding-x-2">
+            <nav class="cell" aria-label="Glavni menu">
+                <ul class="menu align-center" id="main-menu">
+                    <li class="active"><a href="index.html">Početna</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="hero">
+        <div class="grid-x align-center align-middle text-center">
+            <div class="cell">
+                <h2>FPV akademija</h2>
+                <p>Usudi se pomaknuti granice.<br/>Usudi se letjeti.</p>
+                <a href="kontakt.html" class="button">Prijavi se</a>
+            </div>
+        </div>
+    </section>
+    <div class="grid-container fluid main-container">
+        <section class="grid-x grid-padding-x align-center about-us">
+            <div class="cell small-12 medium-10">
+                <h2>O nama</h2>
+                <p>
+                    FPV Akademija je prvo odredište za sve entuzijaste koji žele svladati vještinu upravljanja
+                    bespilotnim letjelicama iz prvog lica. Naš cilj je spojiti vrhunsku tehnologiju, adrenalin i
+                    edukaciju, pretvarajući početnike u vješte pilote i tehničare.
+                </p>
+            </div>
+        </section>
+
+        <section class="grid-x grid-padding-x align-center card-container">
+            <div class="grid-x grid-margin-x grid-margin-y cell small-12 medium-10">
+                <div class="cell small-12 large-4 technical">
+                    <h4>Tehničke vještine</h4>
+                    <p>Naučite osnove elektronike, lemljenja i održavanja FPV dronova kroz praktičan rad.</p>
+                </div>
+                <div class="cell small-12 large-4 cognitive">
+                    <h4>Kognitivne sposobnosti</h4>
+                    <p>Poboljšajte reflekse, prostornu orijentaciju i fokus kroz intenzivne simulacije leta.</p>
+                </div>
+                <div class="cell small-12 large-4 stem">
+                    <h4>STEM priprema</h4>
+                    <p>Primijenite znanja iz fizike i matematike u stvarnom svijetu letenja i aerodinamike.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-x grid-padding-x align-center custom-orbit-container">
+            <div class="cell small-11 medium-12">
+                <section class="orbit" aria-label="Slike dronova" data-orbit data-auto-play="true" data-infinite="true">
+                    <ul class="orbit-container">
+                        <li class="is-active orbit-slide">
+                            <div>
+                                <img src="img/drone-1.jpg" alt="Dron 1"/>
+                            </div>
+                        </li>
+                        <li class="orbit-slide">
+                            <div>
+                                <img src="img/drone-2.jpg" alt="Dron 2"/>
+                            </div>
+                        </li>
+                        <li class="orbit-slide">
+                            <div>
+                                <img src="img/drone-3.jpg" alt="Dron 3"/>
+                            </div>
+                        </li>
+                    </ul>
+                    <nav class="orbit-bullets" aria-label="Navigacija dronova">
+                        <button class="is-active" data-slide="0">
+                            <span class="show-for-sr">Dron 1</span>
+                        </button>
+                        <button data-slide="1">
+                            <span class="show-for-sr">Dron 2</span>
+                        </button>
+                        <button data-slide="2">
+                            <span class="show-for-sr">Dron 3</span>
+                        </button>
+                    </nav>
+                    <button class="orbit-previous">
+                        <span class="show-for-sr">Previous Slide</span>&#8604;
+                    </button>
+                    <button class="orbit-next">
+                        <span class="show-for-sr">Next Slide</span>&#8605;
+                    </button>
+                </section>
+            </div>
+        </section>
+    </div>
+</main>
+<footer>
+    <p><small>Mi činimo nemoguće, mogućim...</small></p>
+    <p>&copy;2026 FPV akademija</p>
+</footer>
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
