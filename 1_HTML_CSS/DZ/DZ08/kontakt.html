@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-banner sticky-top py-2">
+            <div class="container text-center">
+                <span>🚀 Upisi u tijeku! Prijave traju do 15. listopada. <a href="kontakt.html" class="fw-bold">Prijavi
+                        se</a> odmah.</span>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg shadow-sm">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu"
+                    aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="main-menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Početna</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="program.html">Program</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active-link" href="kontakt.html">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="container d-flex justify-content-center align-items-center">
+        <div class="row w-100 justify-content-center main-content">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="contact-card">
+                    <form>
+                        <fieldset>
+                            <legend class="mb-3">
+                                <h4>Kontaktirajte nas</h4>
+                            </legend>
+
+                            <div class="row g-3">
+                                <div class="col-12 col-lg-6">
+                                    <label for="full-name" class="form-label">
+                                        Ime i prezime&nbsp;*
+                                    </label>
+                                    <input id="full-name" type="text" class="form-control" placeholder="Ivan Horvat"
+                                        autofocus />
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <label for="email" class="form-label">
+                                        E-mail&nbsp;*
+                                    </label>
+                                    <input id="email" type="email" class="form-control"
+                                        placeholder="email@primjer.hr" />
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="conditional-textarea" class="form-label">
+                                        Upit&nbsp;*
+                                    </label>
+                                    <textarea id="conditional-textarea" name="message" class="form-control" rows="3"
+                                        placeholder="Kako Vam možemo pomoći?"></textarea>
+                                </div>
+
+                                <div class="col-12 program-upis">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="prijava" name="prijava"
+                                            value="prijava" />
+                                        <label class="form-check-label" for="prijava">
+                                            Želim upisati program&nbsp;
+                                            <span data-bs-toggle="tooltip" tabindex="-1"
+                                                title="Pročitajte više o programu koji nudimo na stranici 'Program'.">&#9432;</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-6">
+                                    <button type="button" class="btn btn-primary w-100">
+                                        Pošalji upit
+                                    </button>
+                                </div>
+
+                                <div class="col-12 col-md-6">
+                                    <button type="reset" class="btn btn-secondary w-100">
+                                        Resetiraj
+                                    </button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="fst-italic"><small>Mi činimo nemoguće, mogućim...</small></p>
+            <p class="mb-0">&copy; 2026 FPV akademija</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

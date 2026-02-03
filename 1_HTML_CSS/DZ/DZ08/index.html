@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPV akademija</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+<div class="top-banner sticky-top py-2">
+        <div class="container text-center">
+            <span>🚀 Upisi u tijeku! Prijave traju do 15. listopada. <a href="kontakt.html" class="fw-bold">Prijavi se</a> odmah.</span>
+        </div>
+    </div>
+<header>
+   
+    <nav class="navbar navbar-expand-lg shadow-sm">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="main-menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active-link" href="index.html">Početna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="program.html">Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="hero bg-dark text-white d-flex align-items-center" style="min-height: 50vh;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h1 class="display-3 fw-bold">FPV akademija</h1>
+                    <p class="lead">Usudi se pomaknuti granice.<br/>Usudi se letjeti.</p>
+                    <a href="kontakt.html" class="btn btn-primary btn-lg mt-3">Prijavi se</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container my-5">
+        <section class="row justify-content-center about-us text-center mx-1">
+            <div class="col-md-10 p-4">
+                <h2 class="mb-4">O nama</h2>
+                <p>
+                    FPV Akademija je prvo odredište za sve entuzijaste koji žele svladati vještinu upravljanja
+                    bespilotnim letjelicama iz prvog lica. Naš cilj je spojiti vrhunsku tehnologiju, adrenalin i
+                    edukaciju, pretvarajući početnike u vješte pilote i tehničare.
+                </p>
+            </div>
+        </section>
+
+        <section class="row g-4 justify-content-center card-container mt-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm p-4 technical">
+                    <h4>Tehničke vještine</h4>
+                    <p>Naučite osnove elektronike, lemljenja i održavanja FPV dronova kroz praktičan rad.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm p-4 cognitive">
+                    <h4>Kognitivne sposobnosti</h4>
+                    <p>Poboljšajte reflekse, prostornu orijentaciju i fokus kroz intenzivne simulacije leta.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm p-4 stem">
+                    <h4>STEM priprema</h4>
+                    <p>Primijenite znanja iz fizike i matematike u stvarnom svijetu letenja i aerodinamike.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="row justify-content-center mt-5">
+            <div class="col-md-12">
+                <div id="droneCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#droneCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Dron 1"></button>
+                        <button type="button" data-bs-target="#droneCarousel" data-bs-slide-to="1" aria-label="Dron 2"></button>
+                        <button type="button" data-bs-target="#droneCarousel" data-bs-slide-to="2" aria-label="Dron 3"></button>
+                    </div>
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img src="../DZ07/img/drone-1.jpg" class="d-block w-50 m-auto" alt="Dron 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../DZ07/img/drone-2.jpg" class="d-block w-50 m-auto" alt="Dron 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../DZ07/img/drone-3.jpg" class="d-block w-50 m-auto" alt="Dron 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#droneCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Prethodna</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#droneCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Sljedeća</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p class="fst-italic"><small>Mi činimo nemoguće, mogućim...</small></p>
+        <p class="mb-0">&copy; 2026 FPV akademija</p>
+    </div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

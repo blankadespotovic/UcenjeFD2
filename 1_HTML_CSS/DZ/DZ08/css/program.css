@@ -1,0 +1,92 @@
+body {
+    background-color: #0b0b0f;
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+main > .container {
+    margin: 1rem 0;
+    padding: 1rem;
+    width: 100%;
+}
+
+.nav,
+.tab-content {
+    background-color: inherit;
+    border: none;
+}
+
+.nav-pills .nav-link {
+    background-color: #242233;
+    color: #b8b1d6;
+    border-radius: 0;
+    width: 100%;
+}
+
+
+.nav-pills .nav-link.active {
+    background-color: #5e5a8a;
+    color: #fff;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #413e5f;
+    color: #fff;
+}
+
+.tab-content {
+    background-color: #5e5a8a;
+    border-radius: .5rem;
+}
+
+.tab-pane {
+    padding: 1rem;
+}
+
+.tab-pane h3 {
+    text-align: center;
+    color: #e3e0f2;
+}
+
+.tab-pane p {
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    color: #b8b1d6;
+}
+
+@media screen and (max-width: 639px) {
+    main {
+        display: block;
+        min-height: max-content;
+    }
+
+    .nav-pills .nav-link {
+        text-align: center;
+        border-radius: 0;
+    }
+
+    .nav-pills .nav-item:first-child .nav-link {
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+    }
+
+    .nav-pills .nav-item:last-child .nav-link {
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+    }
+
+    .tab-content {
+        border-radius: .5rem;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+    main {
+        height: 84.5vh;
+    }
+}

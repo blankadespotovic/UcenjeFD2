@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/program.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-banner sticky-top py-2">
+            <div class="container text-center">
+                <span>🚀 Upisi u tijeku! Prijave traju do 15. listopada. <a href="kontakt.html" class="fw-bold">Prijavi
+                        se</a> odmah.</span>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg shadow-sm nav-container">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu"
+                    aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="main-menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Početna</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active-link" href="program.html">Program</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul class="nav nav-pills flex-column" id="program-tabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="tab1-tab" data-bs-toggle="pill" data-bs-target="#tab1"
+                                type="button" role="tab">
+                                🚁&nbsp;Vrste dronova
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tab2-tab" data-bs-toggle="pill" data-bs-target="#tab2"
+                                type="button" role="tab">
+                                🕹️&nbsp;Simulatori
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tab3-tab" data-bs-toggle="pill" data-bs-target="#tab3"
+                                type="button" role="tab">
+                                ⚡&nbsp;Elektronika
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-9">
+                    <div class="tab-content" id="program-tabsContent">
+                        <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+                            <h3>Vrste dronova i aerodinamika</h3>
+                            <p><b>Tiny Whoop & Toothpick:</b> Mali dronovi za vježbu u zatvorenim prostorima i kućne
+                                utrke.</p>
+                            <p><b>Freestyle & Racing:</b> Moćne 5-inčne zvijeri sposobne za ekstremne akrobacije i
+                                brzine preko 150 km/h.</p>
+                            <p><b>Cinematic FPV:</b> Teški dronovi optimizirani za nošenje filmskih kamera poput GoPro
+                                ili RED modela.</p>
+                            <p><b>Fizika leta:</b> Razumijevanje potiska, težišta i utjecaja propelera na ponašanje
+                                drona.</p>
+                        </div>
+
+                        <div class="tab-pane fade" id="tab2" role="tabpanel">
+                            <h3>Simulatori i virtualni trening</h3>
+                            <p><b>Izgradnja refleksa:</b> Trening u Acro modu bez stabilizacije – razvija osjećaj za
+                                let.</p>
+                            <p><b>Sigurno okruženje:</b> Razbijanje drona u simulatoru ne košta ništa – idealno za
+                                učenje trikova poput Power Loop-a ili Split-S-a.</p>
+                            <p><b>Analiza leta:</b> Učenje čitanja blackbox podataka i ispravljanje grešaka u putanji
+                                leta.</p>
+                        </div>
+
+                        <div class="tab-pane fade" id="tab3" role="tabpanel">
+                            <h3>Elektronika, programiranje i servis</h3>
+                            <p><b>Hardver:</b> Flight Controller, ESC-ovi, VTX i antene – kako sve funkcionira zajedno.
+                            </p>
+                            <p><b>Vještina lemljenja:</b> Praktičan rad spajanja komponenti i popravaka.</p>
+                            <p><b>Softversko podešavanje:</b> Betaflight / iNav – PID tuning, frekvencije i prilagodba
+                                kontrola tvom stilu leta.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <p class="fst-italic"><small>Mi činimo nemoguće, mogućim...</small></p>
+            <p class="mb-0">&copy; 2026 FPV akademija</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
