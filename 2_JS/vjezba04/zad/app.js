@@ -12,23 +12,23 @@ document.getElementById('izvedi').addEventListener('click', () => {
   if (zadatak === '1') {
     //console.log('1. zadatak');
     //console.log(a);
-    
+
     //ovdje rješavam zadatak 1
 
 
-    const x= Number(a)
-    
-    if(!x && x!=0){
+    const x = Number(a)
+
+    if (!x && x != 0) {
       rezultat.innerHTML = 'Unesi broj u polje A'
-      
+
       return
     }
 
     console.log(x)
 
-    const y= Number(b)
+    const y = Number(b)
 
-    if(!y){
+    if (!y) {
       rezultat.innerHTML = 'Unesi broj u polje B'
 
       return
@@ -36,12 +36,12 @@ document.getElementById('izvedi').addEventListener('click', () => {
 
 
 
-    if(x > y){
+    if (x > y) {
       rezultat.innerHTML = x;
-    }else if(y > x){
-       rezultat.innerHTML = y;
-    } 
-    else{
+    } else if (y > x) {
+      rezultat.innerHTML = y;
+    }
+    else {
       rezultat.innerHTML = 'Brojevi su jednaki';
     }
     return;
@@ -49,38 +49,38 @@ document.getElementById('izvedi').addEventListener('click', () => {
 
 
     //ovdje je kraj zadatka 1
-    
+
     return; // short curcuiting
   }
 
   // Ovdje će doći drugi zadatak
-  if(zadatak === '2'){
+  if (zadatak === '2') {
     const x = Number(a);
     const y = Number(b)
     const z = Number(c);
 
 
-    if(!x && x!=0){
+    if (!x && x != 0) {
       rezultat.innerHTML = 'Unesi broj u polje A'
       return;
     }
 
-    if(!y && y!=0){
+    if (!y && y != 0) {
       rezultat.innerHTML = 'Unesi broj u polje B'
       return;
     }
 
-    if(!z && z!=0){
+    if (!z && z != 0) {
       rezultat.innerHTML = 'Unesi broj u polje C'
       return;
     }
-  
 
-    if(x<y && x<z){
+
+    if (x < y && x < z) {
       rezultat.innerHTML = x
-    }else if (y<x && y<z){
-      rezultat.innerHTML= y
-    }else{
+    } else if (y < x && y < z) {
+      rezultat.innerHTML = y
+    } else {
       rezultat.innerHTML = z
     }
     return
@@ -94,10 +94,35 @@ document.getElementById('izvedi').addEventListener('click', () => {
 
   if (zadatak === '3') {
 
-    const brA = Number(a)
-    const brB = Number(b)
-    const brC = Number(c)
-    const brD = Number(d)
+    if (!a || isNaN(a)) {
+      rezultat.innerHTML = 'Unesi broj u polje A';
+
+      return;
+    }
+
+    if (!b || isNaN(b)) {
+      rezultat.innerHTML = 'Unesi broj u polje B';
+
+      return;
+    }
+
+    if (!c || isNaN(c)) {
+      rezultat.innerHTML = 'Unesi broj u polje C';
+
+      return;
+    }
+
+    if (!d || isNaN(d)) {
+      rezultat.innerHTML = 'Unesi broj u polje D';
+
+      return;
+    }
+
+
+    const brA = Number(a);
+    const brB = Number(b);
+    const brC = Number(c);
+    const brD = Number(d);
 
     const zbroj = brA + brB + brC + brD;
 
@@ -111,6 +136,12 @@ document.getElementById('izvedi').addEventListener('click', () => {
   // ZADATAK 4
 
   if (zadatak === '4') {
+
+    if (!a || isNaN(a)) {
+      rezultat.innerHTML = 'Unesite godinu rođenja u polje A';
+
+      return;
+    }
 
     const godinaRodenja = Number(a);
     const trenutnaGodina = new Date().getFullYear();
@@ -128,6 +159,12 @@ document.getElementById('izvedi').addEventListener('click', () => {
   //ZADATAK 5
 
   if (zadatak === '5') {
+
+    if (!a || isNaN(a)) {
+      rezultat.innerHTML = 'Unesite broj u polje A';
+
+      return;
+    }
 
     const broj = Number(a);
 
@@ -147,12 +184,18 @@ document.getElementById('izvedi').addEventListener('click', () => {
 
   if (zadatak === '6') {
 
+    if (!a || isNaN(a)) {
+      rezultat.innerHTML = 'Unesite broj u polje A';
+
+      return;
+    }
+
     const broj = Number(a);
 
     if (broj % 2 === 0) {
-      rezultat.innerHTML = 'Paran';
+      rezultat.innerHTML = 'Paran.';
     } else {
-      rezultat.innerHTML = 'Neparan';
+      rezultat.innerHTML = 'Neparan.';
     }
 
     return;
@@ -163,6 +206,18 @@ document.getElementById('izvedi').addEventListener('click', () => {
   //ZADATAK 7
 
   if (zadatak === '7') {
+
+    if (!a || isNaN(a)) {
+      rezultat.innerHTML = 'Unesite broj bodova u polje A';
+
+      return;
+    }
+
+    if (a < 0 || a > 100) {
+      rezultat.innerHTML = 'Broj bodova mora biti od 0 do 100.';
+
+      return;
+    }
 
     const bodovi = Number(a);
 
@@ -186,13 +241,31 @@ document.getElementById('izvedi').addEventListener('click', () => {
 
   if (zadatak === '8') {
 
+    if (!a || isNaN(a)) {
+      rezultat.innerHTML = 'Unesite broj u polje A';
+
+      return;
+    }
+
+    if (!b || isNaN(b)) {
+      rezultat.innerHTML = 'Unesite broj u polje B';
+
+      return;
+    }
+
+    if (b === 0) {
+      rezultat.innerHTML = 'Ne može se dijeliti s nulom.';
+
+      return;
+    }
+
     const brA = Number(a);
     const brB = Number(b);
 
     if (brA % brB === 0) {
-      rezultat.innerHTML = 'Djeljiv je';
+      rezultat.innerHTML = 'Djeljiv je.';
     } else {
-      rezultat.innerHTML = 'Nije djeljiv';
+      rezultat.innerHTML = 'Nije djeljiv.';
     }
     return;
 
@@ -208,7 +281,7 @@ document.getElementById('izvedi').addEventListener('click', () => {
 
 
 
-  
+
   // ovo će se ispisati ako u HTML dodatke option za zadatak a ovdje ga ne obradite
-rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
+  rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
 });
