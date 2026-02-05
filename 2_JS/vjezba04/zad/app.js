@@ -271,7 +271,115 @@ document.getElementById('izvedi').addEventListener('click', () => {
 
   }
 
+  //ZADATAK 9
 
+  if(zadatak === '9'){
+   // Upisanu vrijednost u polje C ispiši u rezultat
+    rezultat.innerHTML=c
+
+
+
+
+
+
+  return;
+  }
+
+  //ZADATAK 10
+
+  if(zadatak === '10'){
+    const x = Number(a);
+    const y = Number(b);
+    const z = Number(c),k = Number(d);
+    console.log(x,y,z,k)
+
+    if(!x){
+      rezultat.innerHTML='Unesi broj u polje A';
+      return;
+    }
+
+    if(!y){
+      rezultat.innerHTML='Unesi broj u polje B';
+      return;
+    }
+
+    if(!z){
+      rezultat.innerHTML='Unesi broj u polje C';
+      return;
+    }
+
+    if(!k){
+      rezultat.innerHTML='Unesi broj u polje D';
+      return;
+    }
+
+    rezultat.innerHTML=(x+y)*(z+k);
+    
+
+
+    return;
+  }
+
+
+  //ZADATAK 11
+  //Za upisano ime grada u polje B ispiši da li je sjedište Edunove ili ne
+  if(zadatak === '11'){
+
+    if(!b){
+      rezultat.innerHTML= 'Obavezan unos u polje B'
+      return;
+    }
+
+    // if(b.toLowerCase() === 'osijek'){
+    //   rezultat.innerHTML= `${b} je sjedište Edunove`
+    // }else{
+    //   rezultat.innerHTML= `${b} nije sjedište Edunove`
+    // } 
+
+
+
+
+    rezultat.innerHTML= b.toLowerCase() === 'osijek'?`${b} je sjedište Edunove`:`${b} nije sjedište Edunove`
+
+    return;
+  }
+
+  //ZADATAK 12
+
+  if(zadatak === '12'){
+//Za upisanu vrijednost u polju A ispiši kubikažu
+    const x = Number(a)
+
+    if(!x || x<=0){
+      rezultat.innerHTML='Broj mora biti veći od 0'
+      return;
+    }
+    rezultat.innerHTML= x*x*x
+
+
+    return;
+  }
+
+  //ZADATAK 13
+  //Za upisanu vrijednost decimalnog broja u polje D ispiši samo decimalni dio
+
+  if(zadatak === '13'){
+
+    const cijeliBroj = parseInt(d)
+
+    const decimalniBroj = parseFloat(d)
+
+    if(!decimalniBroj){
+      rezultat.innerHTML= 'Niste unijeli broj'
+      return;
+    }
+
+    console.log(cijeliBroj,decimalniBroj)
+    rezultat.innerHTML= decimalniBroj - cijeliBroj
+
+
+    return;
+  }
 
 
 
