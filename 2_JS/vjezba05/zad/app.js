@@ -83,7 +83,58 @@ document.getElementById('izvedi').addEventListener('click', () => {
   break;
 }
 
+   case '4':
+    const x= Number(a);
 
+    if(!x){
+      rezultat.innerHTML='Niste unijeli broj';
+      return;
+    }
+
+    if(x>100){
+      rezultat.innerHTML='Broj je veći od 100';
+      return;
+    }else{
+      rezultat.innerHTML='Broj nije veći od 100';
+      return;
+    }
+
+    rezultat.innerHTML= x>100 ? 'Broj je veći od 100': 'Broj nije veći od 100';
+    break;
+
+    case '5':
+    if(!a){
+      rezultat.innerHTML='Unesi broj'
+      return;
+    }
+
+    rezultat.innerHTML= a.length;
+
+    break;
+
+
+    case '6':
+    
+    if(!a){
+      rezultat.innerHTML= 'Unesite namirnicu'
+      return;
+    }
+
+    const aCisto = a.toLowerCase()
+
+    
+    if(aCisto === 'jabuka' || aCisto === 'kruška' || aCisto === 'banana'){
+      rezultat.innerHTML= 'Voće'
+    }else if(aCisto === 'janjetina' || aCisto === 'svinjetina' || aCisto === 'piletina'){
+      rezultat.innerHTML= 'Meso'
+    }else{
+      rezultat.innerHTML= 'Ne mogu odrediti'
+    }
+
+
+
+
+    break;
 
     default:
       rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
