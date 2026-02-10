@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak vikend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="card">
+    <div class="controls">
+        <label class="select-box">
+            <span>Odaberi zadatak</span>
+            <select id="zadatak">
+                <option value="1">1. Prvi i zadnji element</option>
+                <option value="2">2. Siguran pristup elementu</option>
+                <option value="3">3. Zamjena prva dva elementa</option>
+                <option value="4">4. Dodavanje elemenata prema duljini</option>
+                <option value="5">5. Provjera tipa prvog elementa</option>
+                <option value="6">6. Ukloni zadnji element bez pop()</option>
+                <option value="7">7. Spoji dva niza bez concat()</option>
+                <option value="8">8. Provjera rupe u nizu</option>
+                <option value="9">9. Razdvajanje prvog i ostatka</option>
+                <option value="10">10. Switch prema duljini niza</option>
+            </select>
+        </label>
+        <div class="field-box">
+            <div class="field">
+                <label>A</label>
+                <input required="true" id="A" type="text"/>
+                <small id="errorA"></small>
+            </div>
+            <div class="field">
+                <label>B</label>
+                <input id="B" type="text"/>
+                <small id="errorB"></small>
+            </div>
+        </div>
+        <button id="show" class="btn" type="button">Prikaži riješenje</button>
+    </div>
+</section>
+
+
+<script src="app.js"></script>
+</body>
+</html>
