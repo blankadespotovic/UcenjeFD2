@@ -136,6 +136,43 @@ document.getElementById('izvedi').addEventListener('click', () => {
 
     break;
 
+    case '7':
+
+    const doBroja = Number(a);
+    if(!doBroja){
+      rezultat.innerHTML='Nisi unio broj';
+      return;
+    }
+
+    if(doBroja<=1){
+      rezultat.innerHTML='Obavezno broj veći od 1';
+      return;
+    }
+
+    if(doBroja>10000){
+      rezultat.innerHTML='Obavezno broj manji od 10000';
+      return;
+    }
+
+    let s='';
+
+    for(let i=1;i<=doBroja;i++){
+      //console.log(i + ',');
+      if(i===doBroja){
+        s += i;
+      }else{
+        s += i + ',';
+      }
+      //console.log(s);
+    }
+    rezultat.innerHTML= s;
+
+
+
+
+    break;
+
+
     default:
       rezultat.innerHTML = `Nepoznati zadatak ${zadatak}`;
   }
