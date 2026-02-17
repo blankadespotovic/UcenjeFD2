@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS zadaci</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+<p id="opis"></p>
+<section class="card">
+    <div class="controls">
+        <label class="select-box">
+            <select id="zadatak">
+                <option value="-1"> Odaberite zadatak</option>
+                <optgroup label="Zadaci s nastave">
+                    <option value="1">1. zadatak</option>
+                    <option value="2">2. zadatak</option>
+                    <option value="3">3. zadatak</option>
+                    <option value="4">4. zadatak</option>
+                    <option value="5">5. zadatak</option>
+                </optgroup>
+                <optgroup label="Ostali zadaci">
+                    <option value="6">6. zadatak</option>
+                    <option value="7">7. zadatak</option>
+                    <option value="8">8. zadatak</option>
+                    <option value="9">9. zadatak</option>
+                    <option value="10">10. zadatak</option>
+                    <option value="11">11. zadatak</option>
+                    <option value="12">12. zadatak</option>
+                    <option value="13">13. zadatak</option>
+                    <option value="14">14. zadatak</option>
+                </optgroup>
+                <optgroup label="Bonus zadatak">
+                    <option value="15">15. zadatak</option>
+                </optgroup>
+            </select>
+        </label>
+        <div class="field-box">
+            <div class="field">
+                <label>A</label>
+                <input required="true" id="A" type="text"/>
+                <small id="errorA"></small>
+            </div>
+            <div class="field">
+                <label>B</label>
+                <input id="B" type="text"/>
+                <small id="errorB"></small>
+            </div>
+        </div>
+        <button id="izvedi" class="btn" type="button">Prikaži riješenje</button>
+    </div>
+</section>
+<section class="result">
+    <h2>Rezultat</h2>
+    <div id="rezultat" aria-live="polite">—</div>
+</section>
+<script src="opis.js"></script>
+<script src="zadaci.js"></script>
+</body>
+
+</html>
