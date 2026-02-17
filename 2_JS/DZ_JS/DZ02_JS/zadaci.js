@@ -12,21 +12,16 @@ document.getElementById('izvedi').addEventListener('click', () => {
             rezultat.innerHTML = "Broj mora biti veći od 2 i manji od 100";
             return;
         }
-        let brojZnamenki = poljeB;
-        let zbroj = 0;
-        let o = 0;
-        let kopija = poljeB;
+        
+        const znamenke = poljeB.toString();
+        const eksponent = znamenke.length;
 
-        while (kopija > 0) {
-            o++;
-            kopija = Math.floor(kopija / 10);
+        let zbroj = 0;
+
+        for(let i = 0; i < znamenke.length; i++){
+            zbroj += Math.pow(Number(znamenke[i]), eksponent);
         }
-        brojZnamenki = poljeB;
-        while (brojZnamenki > 0) {
-            let ostatak = brojZnamenki % 10;
-            brojZnamenki = Math.floor(brojZnamenki / 10);
-            zbroj += Math.pow(ostatak, o);
-        }
+
         if (zbroj === poljeB) {
             rezultat.innerHTML = `${poljeB} je Armstrongov broj`;
         } else {
@@ -37,6 +32,11 @@ document.getElementById('izvedi').addEventListener('click', () => {
     }
 
     if (zadatak === '2') {
+
+        if (!vrijednostA) {
+            rezultat.innerHTML = 'Unesite tekst.'
+            return;
+        }
 
         const normalno = vrijednostA.toLowerCase();
         const obrnuto = normalno.split("").reverse().join("");
@@ -52,6 +52,11 @@ document.getElementById('izvedi').addEventListener('click', () => {
 
 
     if (zadatak === '3') {
+
+        if(!vrijednostB || vrijednostB === '') {
+            rezultat.innerHTML = 'Unesite jednu od stop riječi u polje B.';
+            return;
+        }
 
         const stopRijeci = [
             'a', 'ako', 'ali', 'bi', 'bih', 'bila', 'bili', 'bilo', 'bio', 'bismo',
@@ -82,7 +87,7 @@ document.getElementById('izvedi').addEventListener('click', () => {
 
         let postoji = false;
         for (let i = 0; i < stopRijeci.length; i++) {
-            if (vrijednostB === stopRijeci[i]) {
+            if (vrijednostB.toLowerCase() === stopRijeci[i]) {
                 postoji = true;
                 break;
             }
@@ -173,7 +178,7 @@ document.getElementById('izvedi').addEventListener('click', () => {
 
     if (zadatak === '8') {
 
-        let niz = [7, 'jabuka', 3, 'kruška', 9, 'šljiva'];
+        let niz = [7, 'Osijek', 3, 'Kutina', 9, 'Pula'];
 
         if (vrijednostA !== '') {
             niz[niz.length] = vrijednostA;
@@ -190,19 +195,21 @@ document.getElementById('izvedi').addEventListener('click', () => {
                 rez += Number(niz[i])
             }
         }
-        rezultat.innerHTML = rez;
+        rezultat.innerHTML = `<p>${niz}</p> <p>${rez}</p>`;
         return;
     }
 
     if (zadatak === '9') {
 
-        const brojOcjena = Number(vrijednostA);
-        const ocjene = vrijednostB;
+        let brojOcjena = Number(vrijednostA);
+        let ocjene = vrijednostB;
+
+        if (vrijednostA.length > 1) brojOcjena = Number(vrijednostB);
+        if (vrijednostB.length < 2) ocjene = vrijednostA;
+
         const nizOcjena = ocjene.trim().split(/[,\s]+/).map(Number);
 
-
-
-        if (Number.isNaN(brojOcjena) || brojOcjena <= 0) {
+        if (Number.isNaN(brojOcjena) || brojOcjena <= 0 || brojOcjena > 5) {
             rezultat.innerHTML = 'Unesite ispravan broj ocjena';
             return;
         }
@@ -253,12 +260,22 @@ document.getElementById('izvedi').addEventListener('click', () => {
 
     if (zadatak === '11') {
 
-        let rez = '';
+        let recenica;
 
-        for (let i = rez.length; i >= 0; i--) {
-            rez += rez[i];
+        if (vrijednostA !== '' && vrijednostB === '') {
+            recenica = vrijednostA;
+        } else if (vrijednostB !== '' && vrijednostA === '') {
+            recenica = vrijednostB;
+        } else {
+            rezultat.innerHTML = 'Unesite vrijednost u jedno od unosnih polja (A ili B)'
+            return;
         }
-        rezultat.innerHTML = rez;
+
+        rezultat.innerHTML = '';
+
+        for (let i = recenica.length - 1; i >= 0; i--) {
+            rezultat.innerHTML += recenica[i];
+        }
         return;
 
     }
@@ -267,7 +284,6 @@ document.getElementById('izvedi').addEventListener('click', () => {
 
         const temperatura = Number(vrijednostA);
         const vrsta = vrijednostB;
-
 
         if (Number.isNaN(temperatura)) {
             rezultat.innerHTML = 'Unesite ispravnu temperaturu.';
@@ -281,7 +297,6 @@ document.getElementById('izvedi').addEventListener('click', () => {
             rezultat.innerHTML = `${temperatura}°C = ${fahrenheit}°F`
         } else if (vrsta === 'F') {
             rezultat.innerHTML = `${temperatura}°F = ${celzijus}°C`;
-
 
         } else {
             rezultat.innerHTML = 'U polje B unesite C (Celzijus) ili F (Fahrenheit).';

@@ -140,7 +140,7 @@ small {
 }
 
 .result {
-     width: 100%;
+    width: 100%;
     max-width: 720px;
     background: rgba(255, 255, 255, 0.08);
     border-radius: 18px;
@@ -148,9 +148,16 @@ small {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
     border: 1px solid rgba(255, 255, 255, 0.15);
     text-align: center;
+    font-size: 16px;
 }
 
-.card:hover, .result:hover {
+#rezultat{
+    padding-top: 20px;
+    font-size: 25px;
+    color: #a78bfa;
+}
+
+#opis:hover, .card:hover, .result:hover {
     box-shadow: 0 12px 40px rgba(139, 92, 246, 0.25);
     transition: 0.3s ease;
 }

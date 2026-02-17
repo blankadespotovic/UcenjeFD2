@@ -1,4 +1,6 @@
 document.getElementById("zadatak").addEventListener("change", (e) => {
+    const rezultat = document.getElementById('rezultat');
+    rezultat.innerHTML = '—';
     const opis = document.getElementById("opis");
     opis.style = "display: block;"
     switch (e.target.value) {
@@ -32,6 +34,7 @@ document.getElementById("zadatak").addEventListener("change", (e) => {
         }
         case "8": {
             opis.innerHTML = "Napiši program koji deklarira niz, traži od korisnika da unese vrijednosti u niz, a zatim izračunava i ispisuje zbroj svih elemenata niza koji su brojčanog tipa.";
+            rezultat.innerHTML = "7,Osijek,3,Kutina,9,Pula";
             break;
         }
         case "9": {
