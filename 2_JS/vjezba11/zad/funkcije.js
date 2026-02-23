@@ -62,7 +62,14 @@ const provjeriDatoteku = (element) => {
         element.focus();
         throw new Error('Morate učitati barem jednu datoteku.');
     }
-    return element.files[0].name;
+
+    const imena = [];
+    for(let i=0; i<element.files.length; i++){
+        imena.push(element.files[i].name);
+    }
+
+
+    return imena;
 };
 
 const provjeriLogiku = (element) => {
