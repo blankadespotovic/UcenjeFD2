@@ -66,6 +66,12 @@ class Konfiguracija extends EdunovaObrada {
         };
 
         this.#projekt = izvrsiProvjeru(Pomocno.provjeriString, el.projekt, 4, 'Naziv projekta minimalno 4 znaka.');
+        if(el.projekt.value.indexOf(' ')>-1){
+            super.dodajGresku({
+                element: el.projekt,
+                greska: 'Naziv projekta ne smije imati razmak'
+            })
+        }
         this.#instance = izvrsiProvjeru(Pomocno.provjeriCijeliBroj, el.instanci, 1, 10, 'Broj instanci mora biti između 1 i 10.');
         this.#procesor = izvrsiProvjeru(Pomocno.provjeriDecimalniBroj, el.procesor, 0.5, 'Snaga procesora mora biti min 0.5 GHz.');
         this.#datum = izvrsiProvjeru(Pomocno.provjeriDatum, el.datum, new Date(), true, 'Datum ne smije biti u prošlosti.');

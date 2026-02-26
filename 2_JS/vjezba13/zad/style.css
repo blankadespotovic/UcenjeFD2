@@ -79,3 +79,16 @@ div.greska > p{
     color:red;
 }
 
+.grupa{
+    display: flex;
+    gap: 20px;
+}
+
+.grupa .grupa-unosa{
+    flex:1
+}
+
+.grupa > div > div.greska{
+    font-size: 0.8rem;
+}
+
