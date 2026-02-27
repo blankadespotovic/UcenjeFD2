@@ -15,8 +15,8 @@ function napravi() {
 
   if (isNaN(rows) || rows < 1) rows = 1; 
   if (isNaN(cols) || cols < 1) cols = 1; 
-  if (rows > 20) rows = 20; 
-  if (cols > 20) cols = 20;
+  if (rows > 50) rows = 50; 
+  if (cols > 50) cols = 50;
 
   rowsInput.value = rows; 
   colsInput.value = cols;
