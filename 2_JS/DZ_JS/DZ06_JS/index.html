@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Video predstavljanja</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">▶</div>
+        <div class="brand-text">
+          <h1>Video predstavljanja</h1>
+          <p>Galerija polaznika — klikni karticu za pregled</p>
+        </div>
+      </div>
+
+      <div class="controls" role="search">
+        <label class="sr-only" for="search">Pretraži</label>
+        <input id="search" class="search" type="search" placeholder="Pretraži po imenu ili GitHubu…" autocomplete="off" />
+        <select id="initialFilter" class="select" aria-label="Filtriraj po inicijalu">
+          <option value="all">Svi</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="grid" id="grid" aria-label="Popis video predstavljanja">
+    </section>
+
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-label="Pregled videa">
+      <button class="modal-close" type="button" aria-label="Zatvori" data-close="true">✕</button>
+
+      <div class="modal-media" id="modalMedia"></div>
+
+      <div class="modal-meta">
+        <div>
+          <h2 id="modalName"></h2>
+          <a id="modalGit" class="github" href="#" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <div class="pill" id="modalTag">webm</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
