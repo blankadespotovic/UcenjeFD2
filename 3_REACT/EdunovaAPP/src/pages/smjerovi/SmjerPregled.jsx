@@ -3,6 +3,7 @@ import SmjerService from "../../services/smjerovi/SmjerService"
 import { Table } from "react-bootstrap"
 import { NumericFormat } from "react-number-format"
 import { GrValidate } from "react-icons/gr"
+import FormatDatuma from "../../components/FormatDatuma"
 
 export default function SmjerPregled(){
 
@@ -49,8 +50,10 @@ export default function SmjerPregled(){
                             fixedDecimalScale
                             />
                         </td>
-                        <td>{smjer.datumPokretanja}</td>
                         <td>
+                            <FormatDatuma datum={smjer.datumPokretanja} />
+                        </td>
+                        <td style={{textAlign: 'center'}}>
                             <GrValidate 
                             size={25}
                             color={smjer.aktivan ? 'green' : 'red'}
