@@ -2,5 +2,6 @@ export const IME_APLIKACIJE='Edunova APP'
 
 export const RouteNames = {
     HOME: '/',
-    SMJEROVI: '/smjerovi'
+    SMJEROVI: '/smjerovi',
+    SMJEROVI_NOVI: '/smjerovi/novi'
 }

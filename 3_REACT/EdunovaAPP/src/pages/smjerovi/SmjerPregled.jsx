@@ -2,8 +2,10 @@ import { useEffect, useState } from "react"
 import SmjerService from "../../services/smjerovi/SmjerService"
 import { Table } from "react-bootstrap"
 import { NumericFormat } from "react-number-format"
-import { GrValidate } from "react-icons/gr"
+import { GrAdd, GrValidate } from "react-icons/gr"
 import FormatDatuma from "../../components/FormatDatuma"
+import { Link } from "react-router-dom"
+import { RouteNames } from "../../constants"
 
 export default function SmjerPregled(){
 
@@ -22,6 +24,10 @@ export default function SmjerPregled(){
 
     return(
         <>
+        <Link to={RouteNames.SMJEROVI_NOVI} 
+        className="btn btn-success w-100 my-3">
+            Dodavanje novog smjera 
+        </Link>
         <Table>
             <thead>
                 <tr>
