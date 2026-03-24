@@ -1,4 +1,5 @@
 export const smjerovi = [
+    
     {
         sifra: 1,
         naziv: 'Web programiranje',
@@ -15,5 +16,5 @@ export const smjerovi = [
         datumPokretanja: '2019-02-21T17:00:00',
         aktivan: false
     }
-
+        
 ]
