@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react"
 import SmjerService from "../../services/smjerovi/SmjerService"
-import { Table } from "react-bootstrap"
+import { Button, Table } from "react-bootstrap"
 import { NumericFormat } from "react-number-format"
-import { GrAdd, GrValidate } from "react-icons/gr"
+import { GrValidate } from "react-icons/gr"
 import FormatDatuma from "../../components/FormatDatuma"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { RouteNames } from "../../constants"
 
 export default function SmjerPregled(){
+
+    const navigate = useNavigate()
 
     const [smjerovi, setSmjerovi] = useState([])
 
@@ -29,7 +31,7 @@ export default function SmjerPregled(){
         className="btn btn-success w-100 my-3">
             Dodavanje novog smjera 
         </Link>
-        <Table>
+        <Table striped hover responsive>
             <thead>
                 <tr>
                     <th>Naziv</th>
@@ -67,7 +69,11 @@ export default function SmjerPregled(){
                             />
                             
                         </td>
-                        <td></td>
+                        <td>
+                            <Button onClick={()=>{navigate(`/smjerovi/${smjer.sifra}`)}}>
+                                Promijeni
+                            </Button>
+                        </td>
                     </tr>
                 ))}
             </tbody>
